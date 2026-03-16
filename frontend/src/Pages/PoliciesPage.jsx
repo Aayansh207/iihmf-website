@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import SectionHeading from "../Components/SectionHeading";
 import { FiFileText, FiCheckCircle } from "react-icons/fi";
 
 const policiesData = {

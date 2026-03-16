@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FiChevronDown, FiMenu, FiX, FiExternalLink } from "react-icons/fi";
+import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import logo from "./Assets/logo_tbi.png";
 import DST_NIDHI from "./Assets/DST_NIDHI.png";
 import DST_LOGO from "./Assets/dst_logo.png";

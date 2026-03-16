@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import SectionHeading from "../Components/SectionHeading";
-import { FiTool, FiMail, FiActivity } from "react-icons/fi";
 import { TfiAnnouncement } from "react-icons/tfi";
 
 const CareersPage = () => {

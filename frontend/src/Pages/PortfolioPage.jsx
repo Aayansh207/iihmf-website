@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import StartupCard from "../Components/StartupCard";
-import SectionHeading from "../Components/SectionHeading";
 
 // Incubated startup logos
 import sl1 from "../Components/Assets/cw.jpg";

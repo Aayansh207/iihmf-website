@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const WebTeamPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
