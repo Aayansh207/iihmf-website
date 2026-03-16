@@ -27,11 +27,6 @@ import con14 from "../Components/Assets/con14.jpg"
     // Define your events array here
     const events = [
       {
-        url: `${process.env.PUBLIC_URL}/cohort_notification.jpeg`,
-        description: `Cohort 4.0 Call For Startup`,
-        date: ``
-      },
-      {
         url: cof01,
         description: `IIHMF of MNNIT and NIEF of the University of Allahabad have signed a Memorandum of Understanding (MOU) for mutual support towards the development of entrepreneurship and the startup ecosystem.  `,
         date: `11 july 2024`
