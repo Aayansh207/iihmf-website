@@ -1,0 +1,110 @@
+.as-carousel {
+    width: 100vw;
+    height: 1000px;
+  }
+  .as-content {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .as-head {
+    align-items: center;
+  }
+  .as-head h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .as-desc {
+    max-width: 1000px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .as-desc ul li {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 15px;
+  }
+  .as-extra-facilities {
+    margin-top: 20px;
+    background: linear-gradient(135deg,#F2F2F2,#DBDBDB);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .as-extra-facilities h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .as-extra-facilities ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .as-extra-facilities li {
+    margin-bottom: 8px;
+  }
+  
+  
+  .as-carousel-wrapper {
+    width: 87%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+   
+  }
+  
+  .as-carousel-items {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .as-carousel-item img {
+    width: 400px;
+    height: auto;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    transition: width 0.3s;
+  }
+  
+  .as-carousel-back-btn {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 99;
+  }
+  
+  .as-carousel-next-btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 99;
+  }
+  
+  .as-carousel-item {
+    min-width: 400px;
+    margin: 0 10px;
+    border-radius: 10px;
+  }
+  
+  .as-carousel-item.active img{
+    width: 480px;
+  }
+  

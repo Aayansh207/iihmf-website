@@ -1,0 +1,95 @@
+/* Components/AwardCard/AwardCard.css */
+
+.awards-page{
+    padding: 80px;
+    margin-top: 90px;
+    align-items: center;
+
+}
+.awards-head  {
+  text-align: center;
+  
+
+}
+.awards-head h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.awards-container{
+
+  width: auto;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  
+  align-items: center;
+}
+.award-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .award-details {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .award-details h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .award-details p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .award-carousel-wrapper {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+  }
+  
+  .award-carousel-items {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .award-carousel-item {
+    min-width: 200px;
+  }
+  
+  .award-carousel-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .award-carousel-back-btn,
+  .award-carousel-next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .award-carousel-back-btn {
+    left: -30px;
+  }
+  
+  .award-carousel-next-btn {
+    right: -30px;
+  }
+  

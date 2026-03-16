@@ -1,0 +1,141 @@
+.footer {
+    width: 100vw;
+    background: linear-gradient(90deg,#42C2FF,#85F4FF);
+    padding: 30px 50px;
+}
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: #151515;
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    color: #000;
+}
+.footer-logo img{
+    width: 100px;
+    height: 100px;
+}
+.list ul {
+    margin-top: 20px;
+}
+.list h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.list ul {
+    padding: 0;
+}
+.list ul li{
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #000;
+}
+.footer-desc {
+    width: 80%;
+    text-align: center;
+}
+.footer-icons {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer-icons i {
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.footer-icons i:active {
+    background: #aca8a8;
+}
+
+.footer-icons a:nth-child(1) i{
+    padding: 10px 11px;
+}
+.footer-icons a:nth-child(2) i{
+    padding: 10px 14px ;
+}
+.footer-icons a:nth-child(3) i{
+    padding: 10px 12px;
+}
+.footer-icons a:nth-child(4) i{
+    padding: 10px;
+}
+.footer-divison {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-top: 50px;
+}
+.list-head {
+    width: fit-content;
+}
+
+.anim {
+    width: 133px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.dot {
+    width: 5px;
+    height: 3px;
+    background: #000;
+    border-radius: 10px;
+    animation: oscil-dot 3s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes oscil-dot {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(133px - 5px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media (max-width:680px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+.web-team-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .web-team-link a {
+    color: #ab17bb;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  .web-team-link a:hover {
+    color: #007bff;
+  }
+  

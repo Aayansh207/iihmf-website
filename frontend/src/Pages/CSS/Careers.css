@@ -1,0 +1,22 @@
+.careers {
+    width: 100vw;
+}
+.careers-head {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin-top: 107px;
+}
+.careers-head h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.career-notifications {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.career-notifications a {
+    color: #000;
+    font-weight: 500;
+}

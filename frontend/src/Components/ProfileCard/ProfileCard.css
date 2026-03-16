@@ -1,0 +1,172 @@
+.profile-card {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 32px;
+    border: 1px solid #c7c7c7;
+    padding: 3px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;    transition: all 0.5s ease-in-out;
+  }
+  .profile-card:hover {
+    border-color: #3c3c3c;
+  }
+  .profile-card .mail {
+    position: absolute;
+    right: 2rem;
+    top: 1.4rem;
+    background: transparent;
+    border: none;
+  }
+  
+  .profile-card .profile-pic {
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    top: 3px;
+    left: 3px;
+    border-radius: 29px;
+    z-index: 1;
+    border: 0px solid #3c3c3c;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out 0.2s, z-index 0.5s ease-in-out 0.2s;
+  }
+  
+  .profile-card .profile-pic img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .profile-card .profile-pic svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 0px 0px;
+    object-position: 0px 0px;
+    transform-origin: 45% 20%;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .profile-card .bottom {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    right: 3px;
+    background: linear-gradient(135deg,#F2F2F2,#DBDBDB);
+    top: 80%;
+    border-radius: 29px;
+    z-index: 2;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px inset;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  
+  .profile-card .bottom .content {
+    position: absolute;
+    bottom: 10px;
+    left: 1.5rem;
+    right: 1.5rem;
+    height: 160px;
+  }
+  
+  .profile-card .bottom .content .name {
+    display: block;
+    font-size: 1.2rem;
+    color: #3c3c3c;
+    font-weight: bold;
+  }
+  
+  .profile-card .bottom .content .about-me {
+    display: block;
+    font-size: 0.9rem;
+    color: #4d4b4b;
+    /* margin-top: 1rem; */
+
+
+  }
+
+  .profile-card .bottom .bottom-bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-card .bottom .bottom-bottom .social-links-container {
+    display: flex;
+    gap: 1rem;
+  }
+  .social-links-container div svg{
+    transition: all 0.3s;
+  }
+  .social-links-container div:hover svg{
+    color: #42C2FF !important;
+    
+  }
+  .profile-card .bottom .bottom-bottom .social-links-container svg {
+    height: 20px;
+    filter: drop-shadow(0 5px 5px rgba(165, 132, 130, 0.1333333333));
+  }
+  
+  .profile-card .bottom .bottom-bottom .social-links-container div:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .profile-card .bottom .bottom-bottom .button {
+    background: white;
+    color:#3c3c3c;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.7rem;
+    box-shadow: rgba(165, 132, 130, 0.1333333333) 0px 5px 5px 0px;
+    transition: all 0.5s;
+  }
+  
+  .profile-card .bottom .bottom-bottom .button:hover {
+    background:#42C2FF;
+    color: white;
+  }
+  
+  .profile-card:hover {
+    border-top-left-radius: 55px;
+  }
+  
+  .profile-card:hover .bottom {
+    top: 20%;
+    border-radius: 80px 29px 29px 29px;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  }
+  
+  .profile-card:hover .profile-pic {
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 7px solid #acaaaa;
+    box-shadow: rgba(96, 75, 74, 0.1882352941) 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out, z-index 0.5s ease-in-out 0.1s;
+  }
+  
+  
+  .profile-card:hover .profile-pic img {
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  
+  .profile-card:hover .profile-pic svg {
+    transition: all 0.5s ease-in-out 0.5s;
+  }
+  

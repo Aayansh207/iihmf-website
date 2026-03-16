@@ -1,0 +1,11 @@
+.nav-banner {
+    background: linear-gradient(90deg,#0e0d0d,#444344);
+    margin-top: 107px;
+}
+.test {
+    height: 100vh;
+}
+.homepage hr {
+    width: 95%;
+    margin: auto;
+}

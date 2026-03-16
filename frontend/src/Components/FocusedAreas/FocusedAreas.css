@@ -1,0 +1,80 @@
+.focused-areas {
+    width: 100vw;
+    padding: 20px 50px;
+    background: #fff;
+}
+.focused-areas-head {
+    text-align: center;
+    position: relative;
+}
+.focused-areas-head p,.focused-areas-head h1{
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.focused-areas-head p {
+    font-size: 18px;
+}
+.focused-areas-cards {
+    margin-top: 30px;
+    display: grid;
+    width: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    gap: 40px; /* Gap between cards */
+    padding: 0 20px; /* Padding to create space on the sides */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center; /* Center the grid items */
+    
+}
+
+.f-area-head {
+    color: #000;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.f-area-desc {
+    color: #000;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.f-area-icon img {
+    width: 60px;
+}
+.focused-areas-card {
+    /* transform: scale(0); */
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.focused-areas-card.scale-up {
+/* transform: scale(1); */
+transform: translateY(-10px);
+opacity: 1;
+}
+.focused-areas-head {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.7s ease,opacity 0.7s ease;
+}
+.focused-areas-head.scale-up-head {
+    transform: scale(1);
+    opacity: 1;
+}
+.focused-areas-card {
+    width: 300px;
+    background: #fff;
+    padding: 10px;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.focused-areas-card:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,39 @@
+/* EventGallery.css */
+
+.event-gallery {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.event-gallery-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-images {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.event-image {
+  flex: 0 0 auto;
+  width: 15%;
+  height: auto;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.event-image:hover {
+  transform: scale(1.5);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

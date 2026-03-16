@@ -1,0 +1,87 @@
+.our-startups {
+    width: 100vw;
+    padding: 50px 20px;
+}
+
+.our-startup-head {
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+    transition: transform 0.8s ease-in-out;
+}
+.our-startup-head h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.startup-carousel-r1,.startup-carousel-r2 {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 5px 20px;
+}
+.our-startup-head span {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #42C2FF;
+}
+.startup-logo {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s;
+}
+.startup-logo img{
+    width: 150px;
+    border: 2px solid #d8d7d7;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.startup-logo img:hover {
+  border-color: #42C2FF;
+}
+.animate-our-startup-head {
+    transform: scale(1) !important;
+}
+.animate-logo {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r1 .animate-logo {
+    transition-delay: 0.3s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r2 .animate-logo {
+    transition-delay: 0.6s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r1 .animate-logo:nth-child(2) {
+    transition-delay: 0.6s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r1 .animate-logo:nth-child(3) {
+    transition-delay: 0.9s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r1 .animate-logo:nth-child(4) {
+    transition-delay: 1.2s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r2 .animate-logo:nth-child(2) {
+    transition-delay: 1.5s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r2 .animate-logo:nth-child(3) {
+    transition-delay: 1.8s;
+  }
+  
+  .our-startup-head.animate-our-startup-head + .startup-carousel-r2 .animate-logo:nth-child(4) {
+    transition-delay: 2.1s;
+  }
+  

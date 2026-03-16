@@ -1,0 +1,52 @@
+.announcements {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #B8FFF9;
+    overflow: hidden;
+}
+.announcement-title {
+    width: 250px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 30px;  
+    background-color: #42C2FF;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.announcements ul {
+    list-style-type: decimal;
+    display: flex;
+    gap: 50px;
+    height: 100%;
+    animation: announce 50s infinite;
+
+    margin: 0%;
+}   
+.announcements ul li {
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    font-style: normal;
+}
+
+@keyframes announce {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.announcement-title p { 
+    margin: 0px;
+    padding: 8px;
+    font-size: large;
+}

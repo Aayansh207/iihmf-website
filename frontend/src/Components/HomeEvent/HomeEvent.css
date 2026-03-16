@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px;
+}
+
+.event-text-div {
+    width: 260px;
+    flex: 0 0 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6051;
+    border-radius: 8px 0 0 8px;
+}
+
+.event-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.event-desc-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg,#fff7f2,#fff4ee);
+    border-radius: 0 8px 8px 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: box-shadow .18s ease, transform .12s ease;
+}
+
+.event-desc-div:hover {
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.notification-content {
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.check-btn {
+    background: #ff6051;
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.check-btn:active { transform: scale(.98); }
+
+@media (max-width: 720px) {
+    /* Make the event header and content compact and inline on small screens */
+    .main-div { flex-direction: row; gap: 10px; padding: 8px; align-items: center; }
+    .event-text-div { width: 120px; flex: 0 0 120px; height: 56px; border-radius: 8px; }
+    .event-heading { font-size: 16px; }
+    .event-desc-div { border-radius: 8px; height: 56px; display: flex; align-items: center; }
+    .notification-content { padding: 8px 12px; }
+    .notification-title { font-size: 14px; line-height: 1.1; }
+    .check-btn { padding: 6px 10px; }
+}

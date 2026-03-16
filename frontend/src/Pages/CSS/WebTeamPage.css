@@ -1,0 +1,24 @@
+.web-page{
+    background: linear-gradient(135deg,#F2F2F2,#DBDBDB);
+    display: flex;
+    flex-direction: column;
+}
+.web-page-head{
+padding-top: 80px;
+text-align: center; 
+width: 100%;
+
+margin-top: 100px;
+font-family: "Roboto", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+.web-page-container{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 150px;
+margin-top: 50px;
+padding-bottom: 100px;
+}
