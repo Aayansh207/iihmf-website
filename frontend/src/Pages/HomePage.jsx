@@ -28,6 +28,8 @@ import pis7 from "../Components/Assets/pis7.jpg";
 import pis8 from "../Components/Assets/pis8.jpg";
 import pis9 from "../Components/Assets/pis9.jpg";
 
+import pitchPoster from "../Components/Assets/bharat-idea-league.jpeg";
+
 // Event images
 import udbhav_img from "../Components/Assets/3.png";
 import ted_img from "../Components/Assets/ted.jpg";
@@ -90,6 +92,91 @@ const HomePage = () => {
     <div className="min-h-screen">
       <Navbar />
       <HeroCarousel />
+
+            {/* Startup Pitch Event Section */}
+      <section className="py-8 lg:py-12 bg-white border-b border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              
+              {/* Left Column: Event Poster */}
+              <div className="flex justify-center">
+                <img
+                  src={pitchPoster}
+                  alt="Startup Pitch Event"
+                  className="w-full max-w-[450px] rounded-2xl shadow-md border border-gray-100 object-contain"
+                />
+              </div>
+
+              {/* Right Column: Event Details */}
+              <div className="space-y-5 lg:pl-2">
+                {/* Heading & Intro */}
+                <div className="space-y-1.5">
+                  <h2 className="text-base sm:text-lg font-bold text-gray-900 leading-snug">
+                    🚀 Building the Next Big Innovation?
+                  </h2>
+                  <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                    Have a groundbreaking startup idea? Get an opportunity to present your vision, showcase your innovation, and connect with experts from the startup and entrepreneurial ecosystem.
+                  </p>
+                </div>
+
+                {/* 3 Detail Cards (Date, Time, Venue) */}
+                <div className="grid grid-cols-3 gap-3">
+                  <div className="bg-white border border-gray-200/80 rounded-2xl p-3.5 shadow-sm">
+                    <span className="text-[11px] font-bold tracking-wider text-teal-600 uppercase block mb-1">DATE</span>
+                    <p className="text-gray-900 font-bold text-xs sm:text-sm">4th November</p>
+                  </div>
+
+                  <div className="bg-white border border-gray-200/80 rounded-2xl p-3.5 shadow-sm">
+                    <span className="text-[11px] font-bold tracking-wider text-teal-600 uppercase block mb-1">TIME</span>
+                    <p className="text-gray-900 font-bold text-xs sm:text-sm whitespace-nowrap">5:00 PM – 6:00 PM</p>
+                  </div>
+
+                  <div className="bg-white border border-gray-200/80 rounded-2xl p-3.5 shadow-sm">
+                    <span className="text-[11px] font-bold tracking-wider text-teal-600 uppercase block mb-1">VENUE</span>
+                    <p className="text-gray-900 font-bold text-xs sm:text-sm leading-tight">Institute Seminar Hall,</p>
+                    <p className="text-gray-500 text-[11px] leading-tight mt-0.5">MNNIT Allahabad</p>
+                  </div>
+                </div>
+
+                {/* Benefits / Checklist */}
+                <ul className="space-y-2">
+                  {[
+                    "Pitch your startup idea before industry experts and mentors.",
+                    "Explore funding and investment opportunities.",
+                    "Receive valuable feedback and expert guidance.",
+                    "Connect with entrepreneurs, innovators, and industry leaders.",
+                    "Take your startup idea one step closer to reality.",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-2.5 text-gray-700 text-xs sm:text-[13px] leading-snug">
+                      <span className="w-4 h-4 rounded bg-[#10b981] text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-2.5 h-2.5 stroke-[3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Register Button */}
+                <div className="pt-1">
+                  <a
+                    href="https://your-registration-link.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#1e3a5f] hover:bg-[#152b47] text-white font-medium text-sm rounded-lg shadow-sm hover:shadow transition-all duration-200"
+                  >
+                    <span>Register Now</span>
+                    <span className="text-base">→</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="py-16 lg:py-24">
